@@ -1,0 +1,6 @@
+git clone <ropo>
+git fetch --all
+git branch your_name
+git checkout your_branch
+npm i
+npm run dev

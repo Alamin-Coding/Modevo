@@ -1,9 +1,9 @@
 import React from 'react'
-
 const ExclusiveFeaturedCard = ({title,img,color,text}) => {
   return (
     <div className='flex items-center justify-between flex-col'>
         <div className='w-[300px] h-[420px] pb-5'>
+       
                <img className='w-full h-full' src={img} alt="" />
         </div>
      

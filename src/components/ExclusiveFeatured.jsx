@@ -1,5 +1,9 @@
 import React from "react";
+
+import Button from "./Button";
 import ExclusiveFeaturedCard from "./ExclusiveFeaturedCard";
+import left from "../assets/left.png";  
+import right from "../assets/right.png";  
 import exclusive_1 from "../assets/exclusive-1.png";
 import exclusive_2 from "../assets/exclusive-2.png";
 import exclusive_3 from "../assets/exclusive-3.png";
@@ -13,7 +17,8 @@ const ExclusiveFeatured = () => {
         <h2 className="flex items-center justify-center font-medium text-[40px] ">
           Featured
         </h2>
-        <div className="grid grid-cols-4 justify-between gap-8">
+        <div className="grid grid-cols-4 justify-between gap-8 py-15">
+         
           <ExclusiveFeaturedCard
           title="Relaxed Stitch Shirt"
           img={exclusive_1}
@@ -39,6 +44,10 @@ const ExclusiveFeatured = () => {
           text="$223.000"
           />
         </div>
+         <Button>
+            <img src={left} alt="" />
+            <img src={right} alt="" />
+          </Button>
       </div>
     </section>
   );

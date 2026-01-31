@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import TodayDeal from "../components/deals/TodayDeal";
 import Discount from "../components/Discount";
 import Feature from "../components/Feature";
 import NewCollection from "../components/NewCollection";
@@ -13,6 +14,7 @@ const HomePage = () => {
 			<NewCollection />
 			<ExclusiveFeatured />
 			<Blogs />
+			<TodayDeal />
 		</>
 	);
 };

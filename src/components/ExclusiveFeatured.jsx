@@ -24,6 +24,7 @@ const ExclusiveFeatured = () => {
             img={exclusive_1}
             color={color}
             text="ADD TO CART"
+            showUnderline={true}
           />
           <ExclusiveFeaturedCard
             title="Off-Duty Denim Set"

@@ -1,10 +1,11 @@
 import React from 'react'
-import Collection from '../assets/collection.png'
+import Collection from '../assets/fashion.jpg'
 import Button from './Button'
-import Heel from '../assets/heel.png'
-import Bag from '../assets/bag.png'
-import Belt from '../assets/belt.png'
-import Sunglass from '../assets/sunglass.png'
+import Heel from '../assets/heels.jpg'
+import Bag from '../assets/beg.jpg'
+import Belt from '../assets/belt.jpg'
+// import Sunglass from '../assets/Sunglass.jpg'
+import Sunglass from '../assets/sunglass.jpg'
 import SmallCards from './SmallCards'
 
 const NewCollection = () => {

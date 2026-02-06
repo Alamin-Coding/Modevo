@@ -6,17 +6,26 @@ import Feature from "../components/Feature";
 import NewCollection from "../components/NewCollection";
 import ExclusiveFeatured from "../components/ExclusiveFeatured";
 import Blogs from "../components/Blogs/Blogs";
+import ProductSlider from "../components/ProductSlider";
+import Subscribe from "../components/Subscribe";
+import FreshLooks from "../components/FreshLooks";
+import TestimonialSection from "../components/TestimonialSection";
 const HomePage = () => {
 	return (
 		<>
 			<Banner />
 			<Discount />
-			<AboutUs />
 			<Feature />
-			<NewCollection />
+			<AboutUs />
+			<ProductSlider />
+
 			<ExclusiveFeatured />
-			<Blogs />
+			<NewCollection />
 			<TodayDeal />
+			<Subscribe />
+			<FreshLooks />
+			<Blogs />
+			<TestimonialSection />
 		</>
 	);
 };

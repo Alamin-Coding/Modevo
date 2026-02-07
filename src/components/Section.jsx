@@ -1,5 +1,9 @@
-const Section = ({ className, children }) => {
-	return <section className={`${className} bg-white`}>{children}</section>;
+const Section = ({ className, children, bg = "#ffffff" }) => {
+	return (
+		<section className={`${className} bg-white`} style={{ background: bg }}>
+			{children}
+		</section>
+	);
 };
 
 export default Section;

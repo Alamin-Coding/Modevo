@@ -10,6 +10,8 @@ import ProductSlider from "../components/ProductSlider";
 import Subscribe from "../components/Subscribe";
 import FreshLooks from "../components/FreshLooks";
 import TestimonialSection from "../components/TestimonialSection";
+import GetInTouch from "../components/GetInTouch";
+import ImageSlider from "../components/ImageSlider";
 const HomePage = () => {
 	return (
 		<>
@@ -26,6 +28,8 @@ const HomePage = () => {
 			<FreshLooks />
 			<Blogs />
 			<TestimonialSection />
+			<GetInTouch />
+			<ImageSlider />
 		</>
 	);
 };

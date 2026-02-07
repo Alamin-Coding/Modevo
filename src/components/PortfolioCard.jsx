@@ -1,8 +1,8 @@
-import React from "react";
+import portfolio_1 from "../assets/portfolio-1.jpg";
 
 const PortfolioCard = () => {
 	return (
-		<div className="py-9 px-8 bg-[#EFEFEF] space-y-4 portfolio_shape">
+		<div className="py-9 px-8 bg-[#EFEFEF] space-y-4 portfolio_shape relative">
 			<div className="relative">
 				<h4>John Carter</h4>
 				<p>Creative Director</p>
@@ -27,6 +27,14 @@ const PortfolioCard = () => {
 					"Stylish, comfortable, and just right." I’ve never had clothes that
 					feel this good and look this sharp. Modevo totally nailed it.
 				</p>
+			</div>
+
+			<div className="size-21 rounded-full flex items-center justify-center bg-slate-500 overflow-hidden absolute -bottom-28.5 left-0">
+				<img
+					src={portfolio_1}
+					alt="image"
+					className="w-full h-full object-cover"
+				/>
 			</div>
 		</div>
 	);

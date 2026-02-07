@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import Slider from "react-slick";
 // components
 import Button from "./Button";
 import ExclusiveFeaturedCard from "./ExclusiveFeaturedCard";
@@ -8,7 +9,6 @@ import ExclusiveFeaturedCard from "./ExclusiveFeaturedCard";
 
 import left from "../assets/left.png";
 import right from "../assets/right.png";
-import fotter from "../assets/exclusive.png";
 // card images
 import exclusive_1 from "../assets/exclusive-1.png";
 import exclusive_2 from "../assets/exclusive-2.png";
@@ -21,64 +21,110 @@ import color_1 from "../assets/color-1.png";
 // exclusive featured component
 
 const ExclusiveFeatured = () => {
+  const sliderRef = useRef(null);
+
+  const settings = {
+    // gap: 10,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed:1000,
+    autoplaySpeed:1000,
+    cssEase: "linear",
+  };
   return (
     // section start
     <section>
       <div className="container py-12 relative">
-
-        {/* card header */}
-
         <h2 className="flex items-center justify-center font-medium text-[40px] ">
           Featured
-        </h2>
+        </h2> 
+        <div className="py-[60px]">
+        <Slider ref={sliderRef} {...settings}>
+          <div>
+            <ExclusiveFeaturedCard
+              title="Relaxed Stitch Shirt"
+              img={exclusive_1}
+              colors={["#55483B", "#403D72", "#E5C2C3","#E6DDD6"]}
+              text="ADD TO CART"
+              showUnderline={true}
+            />
+          </div>
+
+          <div>
+            <ExclusiveFeaturedCard
+              title="Off-Duty Denim Set"
+              img={exclusive_3}
+              colors={["#E5DCBF","#2B2A2F","#3A582C"]}
+              text="$179.000"
+            />
+          </div>
+          <div>
+            <ExclusiveFeaturedCard
+              title="Utility Pocket Tee"
+              img={exclusive_2}
+              colors={["#E5DCBF","#2B2A2F","#3A582C"]}
+              text="$278.000"
+            />
+          </div>
+          <div>
+            <ExclusiveFeaturedCard
+              title="Retro Crop Tank & Cargo"
+              img={exclusive_4}
+              colors={["#E5DCBF","#2B2A2F","#3A582C"]}
+              text="$223.000"
+            />
+          </div>
+          <div>
+            <ExclusiveFeaturedCard
+              title="Off-Duty Denim Set"
+              img={exclusive_3}
+              colors={["#E5DCBF","#2B2A2F","#3A582C"]}
+              text="$179.000"
+            />
+          </div>
+        </Slider>
+ </div>
+        {/* card header */}
+
+        {/* <h2 className="flex items-center justify-center font-medium text-[40px] ">
+          Featured
+        </h2> */}
 
         {/* card design */}
-
-        <div className="grid grid-cols-4 justify-between gap-8 py-15">
-          <ExclusiveFeaturedCard
-            title="Relaxed Stitch Shirt"
-            img={exclusive_1}
-            color={color}
-            text="ADD TO CART"
-            showUnderline={true}
-          />
-          <ExclusiveFeaturedCard
-            title="Off-Duty Denim Set"
-            img={exclusive_3}
-            color={color_1}
-            text="$179.000"
-          />
-          <ExclusiveFeaturedCard
-            title="Utility Pocket Tee"
-            img={exclusive_2}
-            color={color_1}
-            text="$278.000"
-          />
-          <ExclusiveFeaturedCard
-            title="Retro Crop Tank & Cargo"
-            img={exclusive_4}
-            color={color_1}
-            text="$223.000"
-          />
-        </div>
+        {/* 
+        
+         
+      
+      
+        </div> */}
 
         {/* card slide button */}
 
-        <span className="absolute left-[-2.5%] top-[45%] transform -translate-y-1/2">
+        <span
+          onClick={() => sliderRef.current.slickPrev()}
+          className="absolute left-[-2.5%] top-[45%] transform -translate-y-1/2"
+        >
           <Button>
             <img src={left} alt="Left" />
           </Button>
         </span>
 
-        <span className="absolute right-[-2.5%] top-[45%] transform -translate-y-1/2">
+        <span
+          onClick={() => sliderRef.current.slickNext()}
+          className="absolute right-[-2.5%] top-[45%] transform -translate-y-1/2"
+        >
           <Button>
             <img src={right} alt="Right" />
           </Button>
         </span>
         {/* card slide icon */}
-        <div className="flex justify-center items-center">
+        {/* <div className="flex justify-center items-center">
             <img src={fotter} alt="slide" />
-        </div>
+        </div> */}
       </div>
     </section>
     // section end

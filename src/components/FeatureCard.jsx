@@ -2,7 +2,7 @@ import React from "react";
 
 const FeatureCard = ({ image, title, des }) => {
 	return (
-		<div className="px-15.25 py-8 flex items-center justify-center flex-col">
+		<div className="px-10 xl:px-15.25 py-4 xl:py-8 flex items-center justify-center flex-col border border-slate-200">
 			<div className="w-16 mb-7.25">
 				<img className="w-full" src={image} alt="icon" />
 			</div>

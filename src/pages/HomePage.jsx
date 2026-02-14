@@ -24,12 +24,12 @@ const HomePage = () => {
 			<ExclusiveFeatured />
 			<NewCollection />
 			<TodayDeal />
-			<Subscribe />
-			<FreshLooks />
-			<Blogs />
-			<TestimonialSection />
-			<GetInTouch />
-			<ImageSlider />
+			{/* <Subscribe /> */}
+			{/* <FreshLooks /> */}
+			{/* <Blogs /> */}
+			{/* <TestimonialSection /> */}
+			{/* <GetInTouch /> */}
+			{/* <ImageSlider /> */}
 		</>
 	);
 };

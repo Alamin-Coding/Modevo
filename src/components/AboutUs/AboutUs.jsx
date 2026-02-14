@@ -5,11 +5,11 @@ import image from "../../assets/about-us.jpg";
 const AboutUs = () => {
 	return (
 		<section>
-			<div className="grid grid-cols-2 ">
+			<div className="grid grid-cols-1 md:grid-cols-2 ">
 				<div className="bg-[#F3F3F3]">
-					<div className="py-[155px] px-[116px]">
+					<div className="p-10 lg:16 xl:py-[155px] xl:px-[116px]">
 						<p className="pt-2">About us</p>
-						<h1 className="text-black text-[64px] font-medium font-jost leading-[1.3] tracking-[0.46%] pt-2 ">
+						<h1 className="text-black text-4xl lg:text-5xl xl:text-[64px] font-medium font-jost leading-[1.3] tracking-[0.46%] pt-2 ">
 							Designed to Empower, Crafted to Last
 						</h1>
 						<p className="max-w-124.75 text-[#757575] font-jost text-[16px] leading-normal tracking-[0.46%] pt-5 pb-10 ">

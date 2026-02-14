@@ -4,7 +4,25 @@ import slideImage_3 from "../assets/product-slide (3).jpg";
 import Slider from "react-slick";
 
 const ProductSlider = () => {
-	const settings = {
+	const SM_settings = {
+		dots: false,
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		speed: 500,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+	};
+	const MD_settings = {
+		dots: false,
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		speed: 500,
+		slidesToShow: 5,
+		slidesToScroll: 1,
+	};
+	const LG_settings = {
 		dots: false,
 		infinite: true,
 		autoplay: true,
@@ -12,12 +30,95 @@ const ProductSlider = () => {
 		speed: 500,
 		slidesToShow: 7,
 		slidesToScroll: 1,
-		cssEase: "linear",
 	};
 	return (
 		<section>
-			<div className="w-screen">
-				<Slider {...settings}>
+			{/* Small Device */}
+			<div className="w-screen md:hidden">
+				<Slider {...SM_settings}>
+					<div>
+						<ProductSlideImage image={slideImage_1} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_2} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_3} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_2} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_1} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_3} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_2} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_1} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_1} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_3} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_2} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_1} />
+					</div>
+				</Slider>
+			</div>
+
+			{/* Medium Device */}
+			<div className="w-screen hidden md:block lg:hidden">
+				<Slider {...MD_settings}>
+					<div>
+						<ProductSlideImage image={slideImage_1} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_2} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_3} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_2} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_1} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_3} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_2} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_1} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_1} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_3} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_2} />
+					</div>
+					<div>
+						<ProductSlideImage image={slideImage_1} />
+					</div>
+				</Slider>
+			</div>
+			{/* Large Device */}
+			<div className="w-screen hidden lg:block">
+				<Slider {...LG_settings}>
 					<div>
 						<ProductSlideImage image={slideImage_1} />
 					</div>
@@ -62,7 +163,7 @@ const ProductSlider = () => {
 
 const ProductSlideImage = ({ image }) => {
 	return (
-		<div className="p-11.5">
+		<div className="p-5 lg:p-11.5">
 			<img
 				src={image}
 				alt="image"

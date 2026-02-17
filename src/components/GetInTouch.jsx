@@ -12,12 +12,12 @@ const GetInTouch = () => {
 					description={
 						"Be the first to know about new arrivals, exclusive offers, and style updates — straight to your inbox."
 					}
-					width="w-[528px]"
+					width="w-full lg:w-[528px]"
 				/>
 				<div>
 					<form
 						action=""
-						className="w-125.75 mx-auto border border-black-222 px-1.5 py-1.25 grid grid-cols-[1fr_100px]"
+						className="w-full lg:w-125.75 mx-auto border border-black-222 px-1.5 py-1.25 grid grid-cols-[1fr_100px]"
 					>
 						<input
 							type="text"

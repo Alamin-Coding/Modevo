@@ -2,7 +2,7 @@ import portfolio_1 from "../assets/portfolio-1.jpg";
 
 const PortfolioCard = () => {
 	return (
-		<div className="py-9 px-8 bg-[#EFEFEF] space-y-4 portfolio_shape relative">
+		<div className="py-9 px-8 bg-[#EFEFEF] space-y-4 portfolio_shape relative mb-[115px] lg:mb-[130px]">
 			<div className="relative">
 				<h4>John Carter</h4>
 				<p>Creative Director</p>

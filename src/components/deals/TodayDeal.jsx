@@ -9,7 +9,7 @@ const TodayDeal = () => {
 		backgroundPosition: "center",
 	};
 	return (
-		<section className="max-w-7xl mx-auto h-222.5 mb-5">
+		<section className="max-w-7xl mx-auto lg:h-222.5 mb-5">
 			<div className="text-center mb-10">
 				<p className="text-xs uppercase tracking-widest text-gray-500">
 					Today Deal

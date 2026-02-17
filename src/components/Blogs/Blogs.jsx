@@ -20,7 +20,11 @@ const Blogs = () => {
 					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 						<div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
 							<div class="relative">
-								<img src={blogsOne} className="h-[400px] w-[406px]" alt="" />
+								<img
+									src={blogsOne}
+									className="h-[400px] w-full lg:w-[406px]"
+									alt=""
+								/>
 								<div class="absolute top-4 left-4 bg-white text-cent<div cler px-3 py-2 text-xs font-semibold">
 									<p>28</p>
 									<p class="uppercase">Jan</p>
@@ -51,7 +55,11 @@ const Blogs = () => {
 
 						<div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
 							<div class="relative">
-								<img src={blogsTwo} className="h-[400px] w-[406px]" alt="" />
+								<img
+									src={blogsTwo}
+									className="h-[400px] w-full lg:w-[406px]"
+									alt=""
+								/>
 
 								<div class="absolute top-4 left-4 bg-white text-center px-3 py-2 text-xs font-semibold">
 									<p>28</p>
@@ -83,7 +91,11 @@ const Blogs = () => {
 
 						<div class="border rounded-lg overflow-hidden hover:shadow-lg transition">
 							<div class="relative">
-								<img src={blogsThree} className="h-[400px] w-[406px]" alt="" />
+								<img
+									src={blogsThree}
+									className="h-[400px] w-full lg:w-[406px]"
+									alt=""
+								/>
 
 								<div class="absolute top-4 left-4 bg-white text-center px-3 py-2 text-xs font-semibold">
 									<p>28</p>

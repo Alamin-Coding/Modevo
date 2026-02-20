@@ -14,6 +14,14 @@ const ImageSlider = () => {
 		slidesToShow: 6,
 		slidesToScroll: 1,
 		cssEase: "linear",
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+				},
+			},
+		],
 	};
 	return (
 		<section>

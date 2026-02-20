@@ -1,54 +1,47 @@
-import React from 'react'
-import Collection from '../assets/collection.png'
-import Button from './Button'
-import Heel from '../assets/heel.png'
-import Bag from '../assets/bag.png'
-import Belt from '../assets/belt.png'
-import Sunglass from '../assets/sunglass.png'
-import SmallCards from './SmallCards'
+import React from "react";
+import Collection from "../assets/collection.png";
+import Button from "./Button";
+import Heel from "../assets/heel.png";
+import Bag from "../assets/bag.png";
+import Belt from "../assets/belt.png";
+import Sunglass from "../assets/sunglass.png";
+import SmallCards from "./SmallCards";
 
 const NewCollection = () => {
-  return (
-    <div className='container p-20 flex gap-[69px]'>
-        <div className=''>
-            <div className='w-[587px] mb-12'>
-                <h3 className=' text-[40px] font-medium leading-10.5 text-black-222 mb-4 '>New Arrival Collection</h3>
-                <p className=' text-[18px] font-normal leading-6.75 text-black-222 mb-7.5 '>Step into the season with fresh essentials. From statement heels to everyday accessories — curated to elevate your style in every detail.</p>
-                <Button>SHOP NOW</Button>
-                
-            </div>
-            <div>
-                <img src={Collection} alt="" className=' h-[590px] w-[587px] ' />
-            </div>
-        </div>
-        <div className=' grid grid-cols-2 '>
-            <SmallCards 
-                img = {Heel}
-                title="Golden Strappy Heels"
-                price = "$179.000"
+	return (
+		<div className="container p-20 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-[69px]">
+			<div className="">
+				<div className="mb-12">
+					<h3 className=" text-[40px] font-medium leading-10.5 text-black-222 mb-4 ">
+						New Arrival Collection
+					</h3>
+					<p className=" text-[18px] font-normal leading-6.75 text-black-222 mb-7.5 ">
+						Step into the season with fresh essentials. From statement heels to
+						everyday accessories — curated to elevate your style in every
+						detail.
+					</p>
+					<Button>SHOP NOW</Button>
+				</div>
+				<div>
+					<img src={Collection} alt="" className=" h-[590px] w-full " />
+				</div>
+			</div>
+			<div className="flex-1 grid grid-cols-1 sm:grid-cols-2 ">
+				<SmallCards img={Heel} title="Golden Strappy Heels" price="$179.000" />
+				<SmallCards
+					img={Bag}
+					title="Floral Embossed Cream Tote"
+					price="$249.000"
+				/>
+				<SmallCards img={Belt} title="Slim Matte Black Belt" price="$79.000" />
+				<SmallCards
+					img={Sunglass}
+					title="Bold Frame Sunglasses"
+					price="$80.000"
+				/>
+			</div>
+		</div>
+	);
+};
 
-            />
-            <SmallCards 
-                img = {Bag}
-                title="Floral Embossed Cream Tote"
-                price = "$249.000"
-
-            />
-            <SmallCards 
-                img = {Belt}
-                title="Slim Matte Black Belt"
-                price = "$79.000"
-
-            />
-            <SmallCards 
-                img = {Sunglass}
-                title="Bold Frame Sunglasses"
-                price = "$80.000"
-
-            />
-        </div>
-    </div>
-  )
-}
-
-export default NewCollection
+export default NewCollection;

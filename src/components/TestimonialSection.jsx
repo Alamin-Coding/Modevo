@@ -14,7 +14,7 @@ const TestimonialSection = () => {
 						What our customers say
 					</h2>
 				</div>
-				<div className="grid grid-cols-4 gap-6">
+				<div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6">
 					<PortfolioCard />
 					<PortfolioCard />
 					<PortfolioCard />

@@ -1,0 +1,51 @@
+.my_grid {
+	display: grid;
+	gap: 10px;
+	grid-template-areas:
+		"sidebar header"
+		"sidebar banner"
+		"sidebar about"
+		"sidebar footer";
+}
+
+.navbar {
+	background: black;
+	color: #fff;
+
+	height: 60px;
+	grid-area: header;
+}
+.aside {
+	background: green;
+	color: #fff;
+	grid-area: sidebar;
+}
+.banner {
+	background: blue;
+	color: #fff;
+	height: 100px;
+	grid-area: banner;
+}
+.about {
+	background: blue;
+	color: #fff;
+	height: 100px;
+	grid-area: about;
+}
+
+.footer {
+	background: orange;
+	color: #fff;
+	height: 70px;
+	grid-area: footer;
+}
+
+@media (max-width: 640px) {
+	.my_grid {
+		grid-template-areas:
+			"sidebar sidebar"
+			"header header"
+			"footer footer"
+			"banner about";
+	}
+}

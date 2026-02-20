@@ -9,7 +9,7 @@ const ExclusiveFeaturedCard = ({
 	// console.log(colors);
 	return (
 		<div className="flex items-center justify-between flex-col">
-			<div className="w-[300px] h-[420px] pb-5 relative group">
+			<div className="w-full h-[420px] pb-5 relative group">
 				<img className="w-full h-full" src={img} alt="" />
 				<div className="absolute bottom-6 group-hover:bottom-9 left-1/2 -translate-x-1/2  z-10 group-hover:visible invisible transition-all flex gap-5 justify-center items-center">
 					<div className="size-10.5 rounded-full bg-white cursor-pointer flex justify-center items-center">

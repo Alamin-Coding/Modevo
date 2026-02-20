@@ -28,7 +28,7 @@ const ExclusiveFeatured = () => {
 				</h2>
 
 				{/* card design */}
-				<div className="grid grid-cols-4 justify-between gap-8 py-15">
+				<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-between gap-8 py-15">
 					<ExclusiveFeaturedCard
 						title="Relaxed Stitch Shirt"
 						img={exclusive_1}
